@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Footer from "@/components/footer"
 import Navbar from "@/components/navbar"
 import Image from "next/image";
@@ -20,21 +20,41 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="pt-32 pb-20 bg-gradient-to-br from-primary/10 to-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Masa Depan Gemilang Dimulai{" "}
-            <span className="text-primary">Di Sini</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Sekolah unggulan dengan pendidikan berkualitas tinggi untuk mencetak generasi penerus yang berkarakter, berprestasi, dan siap menghadapi masa depan.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8">
-              Informasi Pendaftaran
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8">
-              Virtual Tour
-            </Button>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid items-center gap-10 lg:grid-cols-12">
+            {/* Left: copy */}
+            <div className="lg:col-span-6 text-center lg:text-left">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                Masa Depan Gemilang Dimulai{" "}
+                <span className="text-primary">Di Sini</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto lg:mx-0">
+                Sekolah unggulan dengan pendidikan berkualitas tinggi untuk mencetak generasi penerus yang berkarakter, berprestasi, dan siap menghadapi masa depan.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button size="lg" className="text-lg px-8">
+                  Informasi Pendaftaran
+                </Button>
+                <Button size="lg" variant="outline" className="text-lg px-8">
+                  Virtual Tour
+                </Button>
+              </div>
+            </div>
+
+            {/* Right: hero image */}
+            <div className="lg:col-span-6">
+              <div className="relative mx-auto w-full max-w-xl">
+                <Image
+                  src="/happy_lady.png"
+                  alt="Siswa bersemangat memulai masa depan gemilang"
+                  width={900}
+                  height={900}
+                  priority
+                  sizes="(min-width: 1024px) 50vw, 90vw"
+                  className="w-full h-auto rounded-2xl shadow-2xl"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -177,7 +197,7 @@ export default function Home() {
             <Card className="overflow-hidden p-0">
               <div className="h-48 bg-blue-800">
                 <Image
-                  src="/elementary-program.jpg"
+                  src="/image/elementary-program.webp"
                   alt="Elementary Program"
                   width={600}
                   height={400}
@@ -218,7 +238,7 @@ export default function Home() {
             <Card className="overflow-hidden p-0">
               <div className="h-48 bg-blue-700">
                 <Image
-                  src="/middle-program.jpg"
+                  src="/image/middle-program.webp"
                   alt="Middle School Program"
                   width={600}
                   height={400}
@@ -259,7 +279,7 @@ export default function Home() {
             <Card className="overflow-hidden p-0">
               <div className="h-48 bg-blue-700">
                 <Image
-                  src="/high-program.jpg"
+                  src="/image/high-program.webp"
                   alt="High School Program"
                   width={600}
                   height={400}
@@ -319,7 +339,7 @@ export default function Home() {
                   <div className="flex items-center">
                     <div className="h-12 w-12 overflow-hidden rounded-full bg-blue-100">
                       <Image
-                        src="/user.jpg"
+                        src="/image/bahasa_inggris.jpg"
                         alt="Parent"
                         width={100}
                         height={100}
@@ -334,7 +354,7 @@ export default function Home() {
                     </div>
                   </div>
                   <p className="mt-4 text-gray-600">
-                    "Guru-guru di sekolah ini benar-benar peduli pada keberhasilan setiap siswa. Anak saya berkembang pesat secara akademik dan sosial sejak bersekolah di sini."
+                    &quot;Guru-guru di sekolah ini benar-benar peduli pada keberhasilan setiap siswa. Anak saya berkembang pesat secara akademik dan sosial sejak bersekolah di sini.&quot;
                   </p>
                 </div>
               </CardContent>
@@ -346,7 +366,7 @@ export default function Home() {
                   <div className="flex items-center">
                     <div className="h-12 w-12 overflow-hidden rounded-full bg-blue-100">
                       <Image
-                        src="/user2.jpg"
+                        src="/image/it_dan_robotik.jpg"
                         alt="Student"
                         width={100}
                         height={100}
@@ -361,7 +381,7 @@ export default function Home() {
                     </div>
                   </div>
                   <p className="mt-4 text-gray-600">
-                    "Saya mendapat banyak kesempatan untuk mengembangkan minat dan bakat saya. Lingkungan yang mendukung membuat saya tumbuh sebagai siswa dan pribadi."
+                    &quot;Saya mendapat banyak kesempatan untuk mengembangkan minat dan bakat saya. Lingkungan yang mendukung membuat saya tumbuh sebagai siswa dan pribadi.&quot;
                   </p>
                 </div>
               </CardContent>
@@ -373,7 +393,7 @@ export default function Home() {
                   <div className="flex items-center">
                     <div className="h-12 w-12 overflow-hidden rounded-full bg-blue-100">
                       <Image
-                        src="/user3.jpg"
+                        src="/image/athletic.webp"
                         alt="Alumni"
                         width={100}
                         height={100}
@@ -390,7 +410,7 @@ export default function Home() {
                     </div>
                   </div>
                   <p className="mt-4 text-gray-600">
-                    "Pendidikan yang saya terima sangat mempersiapkan saya untuk kuliah. Keterampilan berpikir kritis dan etos kerja yang saya pelajari sangat bermanfaat di perguruan tinggi."
+                    &quot;Pendidikan yang saya terima sangat mempersiapkan saya untuk kuliah. Keterampilan berpikir kritis dan etos kerja yang saya pelajari sangat bermanfaat di perguruan tinggi.&quot;
                   </p>
                 </div>
               </CardContent>
@@ -412,7 +432,16 @@ export default function Home() {
           </div>
 
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-44 w-full">
+                <Image
+                  src="/image/paduan_suara.jpeg"
+                  alt="Festival Seni & Kreasi"
+                  width={600}
+                  height={300}
+                  className="h-full w-full object-cover"
+                />
+              </div>
               <CardContent className="px-6">
                 <div className="flex flex-col">
                   <div className="flex items-center justify-between">
@@ -440,7 +469,16 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-44 w-full">
+                <Image
+                  src="/image/labs.webp"
+                  alt="Pameran Sains"
+                  width={600}
+                  height={300}
+                  className="h-full w-full object-cover"
+                />
+              </div>
               <CardContent className="px-6">
                 <div className="flex flex-col">
                   <div className="flex items-center justify-between">
@@ -468,7 +506,16 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="overflow-hidden">
+              <div className="h-44 w-full">
+                <Image
+                  src="/image/classroom.webp"
+                  alt="Open House"
+                  width={600}
+                  height={300}
+                  className="h-full w-full object-cover"
+                />
+              </div>
               <CardContent className="px-6">
                 <div className="flex flex-col">
                   <div className="flex items-center justify-between">
