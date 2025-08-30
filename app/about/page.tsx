@@ -42,8 +42,8 @@ export default function about() {
           <div className="mt-16 grid gap-8 lg:grid-cols-2">
             <div className="relative h-96 overflow-hidden rounded-xl">
               <Image
-                src="/early-school.webp"
-                alt="School in early days"
+                src="/image/early-school.webp"
+                alt="Sekolah di masa awal"
                 width={800}
                 height={600}
                 className="h-full w-full object-cover"
@@ -194,8 +194,8 @@ export default function about() {
             <Card className="overflow-hidden p-0">
               <div className="h-64 bg-primary/20">
                 <Image
-                  src="/principal.jpg"
-                  alt="Principal"
+                  src="/image/dr_mfs.png"
+                  alt="Kepala Sekolah"
                   width={400}
                   height={400}
                   className="h-full w-full object-cover"
@@ -203,12 +203,12 @@ export default function about() {
               </div>
               <CardContent className="px-6 pb-6">
                 <h3 className="text-xl font-bold text-foreground">
-                  Dr. Jennifer Williams
+                  Dr. Muhammad Fazri
                 </h3>
                 <p className="text-sm text-primary">Kepala Sekolah</p>
                 <p className="mt-2 text-muted-foreground">
                   Dengan pengalaman lebih dari 20 tahun di bidang pendidikan,
-                  Dr. Williams memimpin sekolah kami dengan visi dan dedikasi.
+                  Dr. Muhammad Fazri memimpin sekolah kami dengan visi dan dedikasi.
                 </p>
               </CardContent>
             </Card>
@@ -216,8 +216,8 @@ export default function about() {
             <Card className="overflow-hidden p-0">
               <div className="h-64 bg-primary/20">
                 <Image
-                  src="/vice-principal.webp"
-                  alt="Vice Principal"
+                  src="/image/dr_mf.jpeg"
+                  alt="Wakil Kepala Sekolah"
                   width={400}
                   height={400}
                   className="h-full w-full object-cover"
@@ -225,11 +225,11 @@ export default function about() {
               </div>
               <CardContent className="px-6 pb-6">
                 <h3 className="text-xl font-bold text-foreground">
-                  Dr. Marcus Johnson
+                  Dr. Fazri Muhammad S
                 </h3>
                 <p className="text-sm text-primary">Wakil Kepala Sekolah</p>
                 <p className="mt-2 text-muted-foreground">
-                  Dr. Johnson mengawasi program akademik dan pengembangan siswa
+                  Dr. Fazri Muhammad S mengawasi program akademik dan pengembangan siswa
                   dengan keahlian dan kasih sayang.
                 </p>
               </CardContent>
@@ -238,8 +238,8 @@ export default function about() {
             <Card className="overflow-hidden p-0">
               <div className="h-64 bg-primary/20">
                 <Image
-                  src="/dean.png"
-                  alt="Dean of Students"
+                  src="/image/dr_fazri.png"
+                  alt="Dekan Siswa"
                   width={400}
                   height={400}
                   className="h-full w-full object-cover"
@@ -247,11 +247,11 @@ export default function about() {
               </div>
               <CardContent className="px-6 pb-6">
                 <h3 className="text-xl font-bold text-foreground">
-                  Ms. Sophia Chen
+                  Dr. Muhammad Fazri S
                 </h3>
                 <p className="text-sm text-primary">Dekan Siswa</p>
                 <p className="mt-2 text-muted-foreground">
-                  Ms. Chen menciptakan budaya sekolah yang positif dan mendukung
+                  Dr. Muhammad Fazri S menciptakan budaya sekolah yang positif dan mendukung
                   kesuksesan dan kesejahteraan siswa.
                 </p>
               </CardContent>
@@ -276,8 +276,8 @@ export default function about() {
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             <div className="relative h-80 overflow-hidden rounded-xl">
               <Image
-                src="/classroom.jpg"
-                alt="Modern Classrooms"
+                src="/image/classroom.webp"
+                alt="Ruang Kelas Modern"
                 width={800}
                 height={600}
                 className="h-full w-full object-cover"
@@ -295,8 +295,8 @@ export default function about() {
 
             <div className="relative h-80 overflow-hidden rounded-xl">
               <Image
-                src="/labs.webp"
-                alt="Science Labs"
+                src="/image/labs.webp"
+                alt="Laboratorium Sains"
                 width={800}
                 height={600}
                 className="h-full w-full object-cover"
@@ -312,8 +312,8 @@ export default function about() {
 
             <div className="relative h-80 overflow-hidden rounded-xl">
               <Image
-                src="/library.jpg"
-                alt="Library"
+                src="/image/library.webp"
+                alt="Perpustakaan & Pusat Media"
                 width={800}
                 height={600}
                 className="h-full w-full object-cover"
@@ -331,8 +331,8 @@ export default function about() {
 
             <div className="relative h-80 overflow-hidden rounded-xl">
               <Image
-                src="/athletic.jpg"
-                alt="Athletic Facilities"
+                src="/image/athletic.webp"
+                alt="Fasilitas Olahraga"
                 width={800}
                 height={600}
                 className="h-full w-full object-cover"

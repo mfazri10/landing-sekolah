@@ -1,7 +1,6 @@
-// app/api/contact/route.ts
 import { NextResponse } from 'next/server';
 import pool from '@/lib/db';
-import { Contact } from '@/lib/types'; // pastikan path importnya benar
+import { Contact } from '@/lib/types';
 
 // Fungsi untuk mengambil kontak
 export async function GET() {

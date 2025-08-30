@@ -21,30 +21,30 @@ export default function AcademicsPage() {
       <Navbar />
       <div className="pt-16">
       {/* Hero Section */}
-      <section className="bg-primary py-16 sm:py-24">
+  <section className="bg-primary/90 py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-extrabold tracking-tight text-primary-foreground sm:text-5xl md:text-6xl">
-              Academic Excellence
+            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
+              Keunggulan Akademik
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-xl text-primary-foreground/80">
-              Rigorous curriculum designed to challenge and inspire students at
-              every level.
+            <p className="mx-auto mt-6 max-w-2xl text-xl text-white/80">
+              Kurikulum yang ketat dan terstruktur untuk menantang serta
+              menginspirasi siswa di setiap jenjang.
             </p>
           </div>
         </div>
       </section>
 
       {/* Academic Philosophy */}
-      <section className="bg-background py-16 sm:py-24">
+  <section className="bg-background py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl text-center">
-              Our Academic Philosophy
+              Filosofi Akademik Kami
             </h2>
             <p className="mt-6 text-lg text-muted-foreground">
-              At our school, we believe that education should be both
-              challenging and engaging. Our academic program is designed to:
+              Di sekolah kami, kami percaya pendidikan harus menantang dan
+              menyenangkan. Program akademik kami dirancang untuk:
             </p>
             <ul className="mt-6 space-y-4">
               <li className="flex items-start">
@@ -55,9 +55,9 @@ export default function AcademicsPage() {
                 </div>
                 <p className="ml-3 text-base text-muted-foreground">
                   <span className="font-medium text-foreground">
-                    Foster critical thinking
-                  </span>{" "}
-                  through inquiry-based learning and problem-solving activities.
+                    Mengembangkan berpikir kritis
+                  </span>
+                  melalui pembelajaran berbasis inkuiri dan aktivitas pemecahan masalah.
                 </p>
               </li>
               <li className="flex items-start">
@@ -68,9 +68,9 @@ export default function AcademicsPage() {
                 </div>
                 <p className="ml-3 text-base text-muted-foreground">
                   <span className="font-medium text-foreground">
-                    Develop strong communication skills
-                  </span>{" "}
-                  through writing, speaking, and collaborative projects.
+                    Mengembangkan keterampilan komunikasi yang baik
+                  </span>
+                  melalui menulis, berbicara, dan proyek kolaboratif.
                 </p>
               </li>
               <li className="flex items-start">
@@ -81,9 +81,9 @@ export default function AcademicsPage() {
                 </div>
                 <p className="ml-3 text-base text-muted-foreground">
                   <span className="font-medium text-foreground">
-                    Encourage creativity and innovation
-                  </span>{" "}
-                  across all subject areas.
+                    Mendorong kreativitas dan inovasi
+                  </span>
+                  di semua bidang studi.
                 </p>
               </li>
               <li className="flex items-start">
@@ -94,9 +94,9 @@ export default function AcademicsPage() {
                 </div>
                 <p className="ml-3 text-base text-muted-foreground">
                   <span className="font-medium text-foreground">
-                    Prepare students for college and beyond
-                  </span>{" "}
-                  with rigorous coursework and personalized guidance.
+                    Mempersiapkan siswa untuk perguruan tinggi dan masa depan
+                  </span>
+                  dengan pembelajaran yang ketat dan bimbingan personal.
                 </p>
               </li>
             </ul>
@@ -105,98 +105,97 @@ export default function AcademicsPage() {
       </section>
 
       {/* Academic Programs */}
-      <section className="bg-muted py-16 sm:py-24">
+  <section className="bg-muted/50 py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-              Our Academic Programs
+              Program Akademik Kami
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Explore our comprehensive educational programs designed for each
-              stage of development.
+              Jelajahi program pendidikan komprehensif yang dirancang untuk
+              setiap jenjang perkembangan.
             </p>
           </div>
 
           <div className="mt-12">
             <Tabs defaultValue="elementary" className="w-full">
-              <TabsList className="grid w-full grid-cols-3 h-full p-1">
+              <TabsList className="grid w-full grid-cols-3 h-full p-1 bg-background rounded-xl">
                 <TabsTrigger
                   value="elementary"
                   className={
-                    "data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-2 text-base font-semibold cursor-pointer"
+                    "data-[state=active]:bg-primary data-[state=active]:text-white py-2 text-base font-semibold cursor-pointer rounded-lg"
                   }
                 >
-                  Elementary School
+                  Sekolah Dasar
                 </TabsTrigger>
                 <TabsTrigger
                   value="middle"
                   className={
-                    "data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-2 text-base font-semibold cursor-pointer"
+                    "data-[state=active]:bg-primary data-[state=active]:text-white py-2 text-base font-semibold cursor-pointer rounded-lg"
                   }
                 >
-                  Middle School
+                  Sekolah Menengah Pertama
                 </TabsTrigger>
                 <TabsTrigger
                   value="high"
                   className={
-                    "data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-2 text-base font-semibold cursor-pointer"
+                    "data-[state=active]:bg-primary data-[state=active]:text-white py-2 text-base font-semibold cursor-pointer rounded-lg"
                   }
                 >
-                  High School
+                  Sekolah Menengah Atas
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="elementary" className="mt-6">
                 <div className="grid gap-8 lg:grid-cols-2">
-                  <div className="relative h-80 overflow-hidden rounded-xl">
+                  <div className="relative h-80 overflow-hidden rounded-xl bg-background">
                     <Image
-                      src="/elementary-program.jpg"
-                      alt="Elementary Classroom"
+                      src="/image/elementary-program.webp"
+                      alt="Kelas Sekolah Dasar"
                       width={800}
                       height={600}
                       className="h-full w-full object-cover"
                     />
                   </div>
                   <div className="flex flex-col justify-center space-y-4">
-                    <h3 className="text-2xl font-bold text-foreground">
-                      Elementary School (Grades K-5)
+                      <h3 className="text-2xl font-bold text-foreground">
+                      Sekolah Dasar (Kelas K-5)
                     </h3>
                     <p className="text-muted-foreground">
-                      Our elementary program focuses on building strong
-                      foundations in core subjects while nurturing curiosity and
-                      creativity. Students develop essential skills in reading,
-                      writing, mathematics, science, and social studies through
-                      engaging, hands-on activities.
+                      Program sekolah dasar kami berfokus pada membangun fondasi yang kuat
+                      di mata pelajaran inti sambil menumbuhkan rasa ingin tahu dan kreativitas.
+                      Siswa mengembangkan keterampilan penting dalam membaca, menulis, matematika,
+                      ilmu pengetahuan, dan ilmu sosial melalui aktivitas yang menarik dan praktis.
                     </p>
                     <ul className="space-y-2">
                       <li className="flex items-center">
                         <BookOpen className="mr-2 h-5 w-5 text-primary" />
-                        <span>Balanced literacy approach</span>
+                        <span>Pendekatan literasi terpadu</span>
                       </li>
                       <li className="flex items-center">
                         <Calculator className="mr-2 h-5 w-5 text-primary" />
-                        <span>Singapore Math curriculum</span>
+                        <span>Kurikulum Matematika Singapura</span>
                       </li>
                       <li className="flex items-center">
                         <Palette className="mr-2 h-5 w-5 text-primary" />
-                        <span>Integrated arts program</span>
+                        <span>Program seni terintegrasi</span>
                       </li>
                       <li className="flex items-center">
                         <Globe className="mr-2 h-5 w-5 text-primary" />
-                        <span>Foreign language introduction</span>
+                        <span>Pengenalan bahasa asing</span>
                       </li>
                     </ul>
                     <Button className="w-fit bg-primary hover:bg-primary/90 cursor-pointer">
-                      Learn More
+                      Pelajari Lebih Lanjut
                     </Button>
                   </div>
                 </div>
               </TabsContent>
               <TabsContent value="middle" className="mt-6">
                 <div className="grid gap-8 lg:grid-cols-2">
-                  <div className="relative h-80 overflow-hidden rounded-xl">
+                  <div className="relative h-80 overflow-hidden rounded-xl bg-background">
                     <Image
-                      src="/middle-program.jpg"
-                      alt="Middle School Students"
+                      src="/image/middle-program.webp"
+                      alt="Siswa Sekolah Menengah Pertama"
                       width={800}
                       height={600}
                       className="h-full w-full object-cover"
@@ -204,45 +203,44 @@ export default function AcademicsPage() {
                   </div>
                   <div className="flex flex-col justify-center space-y-4">
                     <h3 className="text-2xl font-bold text-foreground">
-                      Middle School (Grades 6-8)
+                      Sekolah Menengah Pertama (Kelas 6-8)
                     </h3>
                     <p className="text-muted-foreground">
-                      Our middle school program builds on elementary foundations
-                      while helping students develop greater independence and
-                      critical thinking skills. Students explore more advanced
-                      content across all subject areas and begin to discover
-                      their unique interests and talents.
+                      Program SMP kami membangun fondasi dari SD sambil membantu siswa
+                      mengembangkan kemandirian dan keterampilan berpikir kritis yang lebih baik.
+                      Siswa mempelajari materi yang lebih mendalam di semua bidang studi dan mulai
+                      menemukan minat serta bakat unik mereka.
                     </p>
                     <ul className="space-y-2">
                       <li className="flex items-center">
                         <BookOpen className="mr-2 h-5 w-5 text-primary" />
-                        <span>Advanced literature studies</span>
+                        <span>Studi literatur lanjutan</span>
                       </li>
                       <li className="flex items-center">
                         <Microscope className="mr-2 h-5 w-5 text-primary" />
-                        <span>Hands-on science investigations</span>
+                        <span>Eksperimen sains langsung</span>
                       </li>
                       <li className="flex items-center">
                         <Code className="mr-2 h-5 w-5 text-primary" />
-                        <span>Technology and coding courses</span>
+                        <span>Kursus teknologi dan pemrograman</span>
                       </li>
                       <li className="flex items-center">
                         <Globe className="mr-2 h-5 w-5 text-primary" />
-                        <span>Foreign language options</span>
+                        <span>Pilihan bahasa asing</span>
                       </li>
                     </ul>
                     <Button className="w-fit bg-primary hover:bg-primary/90 cursor-pointer">
-                      Learn More
+                      Pelajari Lebih Lanjut
                     </Button>
                   </div>
                 </div>
               </TabsContent>
               <TabsContent value="high" className="mt-6">
                 <div className="grid gap-8 lg:grid-cols-2">
-                  <div className="relative h-80 overflow-hidden rounded-xl">
+                  <div className="relative h-80 overflow-hidden rounded-xl bg-background">
                     <Image
-                      src="/high-program.jpg"
-                      alt="High School Students"
+                      src="/image/high-program.webp"
+                      alt="Siswa Sekolah Menengah Atas"
                       width={800}
                       height={600}
                       className="h-full w-full object-cover"
@@ -250,36 +248,34 @@ export default function AcademicsPage() {
                   </div>
                   <div className="flex flex-col justify-center space-y-4">
                     <h3 className="text-2xl font-bold text-foreground">
-                      High School (Grades 9-12)
+                      Sekolah Menengah Atas (Kelas 9-12)
                     </h3>
                     <p className="text-muted-foreground">
-                      Our high school program prepares students for college and
-                      beyond through rigorous academics, leadership
-                      opportunities, and personalized guidance. Students can
-                      choose from a wide range of courses, including Advanced
-                      Placement options, to create a program that aligns with
-                      their goals.
+                      Program SMA kami mempersiapkan siswa untuk perguruan tinggi dan masa depan
+                      melalui akademik yang ketat, kesempatan kepemimpinan, dan bimbingan personal.
+                      Siswa dapat memilih berbagai mata pelajaran, termasuk opsi Advanced Placement,
+                      untuk menyesuaikan program sesuai tujuan mereka.
                     </p>
                     <ul className="space-y-2">
                       <li className="flex items-center">
                         <GraduationCap className="mr-2 h-5 w-5 text-primary" />
-                        <span>College preparatory curriculum</span>
+                        <span>Kurikulum persiapan perguruan tinggi</span>
                       </li>
                       <li className="flex items-center">
                         <BookOpen className="mr-2 h-5 w-5 text-primary" />
-                        <span>Advanced Placement courses</span>
+                        <span>Mata pelajaran Advanced Placement</span>
                       </li>
                       <li className="flex items-center">
                         <Microscope className="mr-2 h-5 w-5 text-primary" />
-                        <span>Research opportunities</span>
+                        <span>Kesempatan riset</span>
                       </li>
                       <li className="flex items-center">
                         <Globe className="mr-2 h-5 w-5 text-primary" />
-                        <span>Global studies program</span>
+                        <span>Program studi global</span>
                       </li>
                     </ul>
                     <Button className="w-fit bg-primary hover:bg-primary/90 cursor-pointer">
-                      Learn More
+                      Pelajari Lebih Lanjut
                     </Button>
                   </div>
                 </div>
@@ -290,15 +286,15 @@ export default function AcademicsPage() {
       </section>
 
       {/* Curriculum Areas */}
-      <section className="bg-white py-16 sm:py-24">
+  <section className="bg-background py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-teal-800 sm:text-4xl">
-              Curriculum Areas
+            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              Bidang Kurikulum
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Our comprehensive curriculum provides students with a well-rounded
-              education.
+            <p className="mt-4 text-lg text-muted-foreground">
+              Kurikulum komprehensif kami memberikan pendidikan yang seimbang
+              bagi siswa.
             </p>
           </div>
 
@@ -306,15 +302,15 @@ export default function AcademicsPage() {
             <Card>
               <CardContent className="p-6">
                 <div className="flex flex-col items-center text-center">
-                  <div className="rounded-full bg-teal-100 p-3">
-                    <BookOpen className="h-8 w-8 text-teal-600" />
+                  <div className="rounded-full bg-primary/10 p-3">
+                    <BookOpen className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="mt-4 text-xl font-bold text-gray-900">
-                    Language Arts
+                    <h3 className="mt-4 text-xl font-bold text-primary">
+                    Bahasa & Sastra
                   </h3>
-                  <p className="mt-2 text-gray-600">
-                    Developing strong reading, writing, speaking, and listening
-                    skills through literature, composition, and communication.
+                  <p className="mt-2 text-muted-foreground">
+                    Mengembangkan keterampilan membaca, menulis, berbicara, dan mendengarkan
+                    melalui literatur, komposisi, dan komunikasi.
                   </p>
                 </div>
               </CardContent>
@@ -323,15 +319,15 @@ export default function AcademicsPage() {
             <Card>
               <CardContent className="p-6">
                 <div className="flex flex-col items-center text-center">
-                  <div className="rounded-full bg-teal-100 p-3">
-                    <Calculator className="h-8 w-8 text-teal-600" />
+                  <div className="rounded-full bg-primary/10 p-3">
+                    <Calculator className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="mt-4 text-xl font-bold text-gray-900">
-                    Mathematics
+                    <h3 className="mt-4 text-xl font-bold text-primary">
+                    Matematika
                   </h3>
-                  <p className="mt-2 text-gray-600">
-                    Building mathematical understanding through problem-solving,
-                    reasoning, and real-world applications.
+                  <p className="mt-2 text-muted-foreground">
+                    Membangun pemahaman matematika melalui pemecahan masalah, penalaran,
+                    dan aplikasi dunia nyata.
                   </p>
                 </div>
               </CardContent>
@@ -340,15 +336,15 @@ export default function AcademicsPage() {
             <Card>
               <CardContent className="p-6">
                 <div className="flex flex-col items-center text-center">
-                  <div className="rounded-full bg-teal-100 p-3">
-                    <Microscope className="h-8 w-8 text-teal-600" />
+                  <div className="rounded-full bg-primary/10 p-3">
+                    <Microscope className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="mt-4 text-xl font-bold text-gray-900">
-                    Science
+                    <h3 className="mt-4 text-xl font-bold text-primary">
+                    Ilmu Pengetahuan
                   </h3>
-                  <p className="mt-2 text-gray-600">
-                    Exploring the natural world through inquiry-based learning,
-                    experiments, and scientific investigation.
+                  <p className="mt-2 text-muted-foreground">
+                    Mengeksplorasi dunia alam melalui pembelajaran berbasis inkuiri,
+                    eksperimen, dan investigasi ilmiah.
                   </p>
                 </div>
               </CardContent>
@@ -357,15 +353,15 @@ export default function AcademicsPage() {
             <Card>
               <CardContent className="p-6">
                 <div className="flex flex-col items-center text-center">
-                  <div className="rounded-full bg-teal-100 p-3">
-                    <Globe className="h-8 w-8 text-teal-600" />
+                  <div className="rounded-full bg-primary/10 p-3">
+                    <Globe className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="mt-4 text-xl font-bold text-gray-900">
-                    Social Studies
+                    <h3 className="mt-4 text-xl font-bold text-primary">
+                    Ilmu Pengetahuan Sosial
                   </h3>
-                  <p className="mt-2 text-gray-600">
-                    Understanding history, geography, economics, and civics to
-                    become informed global citizens.
+                  <p className="mt-2 text-muted-foreground">
+                    Memahami sejarah, geografi, ekonomi, dan kewarganegaraan untuk
+                    menjadi warga dunia yang berpengetahuan.
                   </p>
                 </div>
               </CardContent>
@@ -374,15 +370,14 @@ export default function AcademicsPage() {
             <Card>
               <CardContent className="p-6">
                 <div className="flex flex-col items-center text-center">
-                  <div className="rounded-full bg-teal-100 p-3">
-                    <Globe className="h-8 w-8 text-teal-600" />
+                  <div className="rounded-full bg-primary/10 p-3">
+                    <Globe className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="mt-4 text-xl font-bold text-gray-900">
-                    World Languages
+                    <h3 className="mt-4 text-xl font-bold text-primary">
+                    Bahasa Asing
                   </h3>
-                  <p className="mt-2 text-gray-600">
-                    Developing proficiency in foreign languages and
-                    understanding of diverse cultures.
+                  <p className="mt-2 text-muted-foreground">
+                    Mengembangkan kemampuan berbahasa asing dan pemahaman budaya yang beragam.
                   </p>
                 </div>
               </CardContent>
@@ -391,15 +386,14 @@ export default function AcademicsPage() {
             <Card>
               <CardContent className="p-6">
                 <div className="flex flex-col items-center text-center">
-                  <div className="rounded-full bg-teal-100 p-3">
-                    <Palette className="h-8 w-8 text-teal-600" />
+                  <div className="rounded-full bg-primary/10 p-3">
+                    <Palette className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="mt-4 text-xl font-bold text-gray-900">
-                    Visual & Performing Arts
+                    <h3 className="mt-4 text-xl font-bold text-primary">
+                    Seni Visual & Pertunjukan
                   </h3>
-                  <p className="mt-2 text-gray-600">
-                    Expressing creativity through art, music, drama, and dance
-                    programs.
+                  <p className="mt-2 text-muted-foreground">
+                    Mengekspresikan kreativitas melalui seni, musik, drama, dan program tari.
                   </p>
                 </div>
               </CardContent>
@@ -408,15 +402,15 @@ export default function AcademicsPage() {
             <Card>
               <CardContent className="p-6">
                 <div className="flex flex-col items-center text-center">
-                  <div className="rounded-full bg-teal-100 p-3">
-                    <Code className="h-8 w-8 text-teal-600" />
+                  <div className="rounded-full bg-primary/10 p-3">
+                    <Code className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="mt-4 text-xl font-bold text-gray-900">
-                    Technology
+                    <h3 className="mt-4 text-xl font-bold text-primary">
+                    Teknologi
                   </h3>
-                  <p className="mt-2 text-gray-600">
-                    Building digital literacy and computational thinking skills
-                    for the modern world.
+                  <p className="mt-2 text-muted-foreground">
+                    Membangun literasi digital dan keterampilan berpikir komputasional
+                    untuk dunia modern.
                   </p>
                 </div>
               </CardContent>
@@ -425,15 +419,14 @@ export default function AcademicsPage() {
             <Card>
               <CardContent className="p-6">
                 <div className="flex flex-col items-center text-center">
-                  <div className="rounded-full bg-teal-100 p-3">
-                    <Music className="h-8 w-8 text-teal-600" />
+                  <div className="rounded-full bg-primary/10 p-3">
+                    <Music className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="mt-4 text-xl font-bold text-gray-900">
-                    Physical Education
+                    <h3 className="mt-4 text-xl font-bold text-primary">
+                    Pendidikan Jasmani
                   </h3>
-                  <p className="mt-2 text-gray-600">
-                    Promoting physical fitness, health, teamwork, and lifelong
-                    wellness habits.
+                  <p className="mt-2 text-muted-foreground">
+                    Mendorong kebugaran jasmani, kesehatan, kerja sama tim, dan kebiasaan hidup sehat.
                   </p>
                 </div>
               </CardContent>
@@ -443,76 +436,76 @@ export default function AcademicsPage() {
       </section>
 
       {/* Academic Support */}
-      <section className="bg-teal-50 py-16 sm:py-24">
+  <section className="bg-muted/30 py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-teal-800 sm:text-4xl">
-              Academic Support & Enrichment
+            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              Dukungan Akademik & Pengayaan
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              We provide resources to help every student succeed and reach their
-              full potential.
+            <p className="mt-4 text-lg text-muted-foreground">
+              Kami menyediakan sumber daya untuk membantu setiap siswa berhasil
+              dan mencapai potensi penuh mereka.
             </p>
           </div>
 
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             <Card>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-teal-800">
-                  Learning Support Services
+              <CardContent className="p-6 bg-background rounded-xl">
+                  <h3 className="text-xl font-bold text-primary">
+                  Layanan Dukungan Pembelajaran
                 </h3>
-                <p className="mt-2 text-gray-600">
-                  Our dedicated learning specialists provide individualized
-                  support for students with diverse learning needs. Services
-                  include:
+                <p className="mt-2 text-muted-foreground">
+                  Spesialis pembelajaran kami menyediakan dukungan individual
+                  bagi siswa dengan kebutuhan belajar yang beragam. Layanan
+                  meliputi:
                 </p>
                 <ul className="mt-4 space-y-2">
                   <li className="flex items-start">
                     <div className="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-teal-600"></div>
-                    <span>Personalized learning plans</span>
+                    <span>Rencana pembelajaran personal</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-teal-600"></div>
-                    <span>One-on-one tutoring</span>
+                    <span>Bimbingan belajar satu-satu</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-teal-600"></div>
-                    <span>Study skills development</span>
+                    <span>Pengembangan keterampilan belajar</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-teal-600"></div>
-                    <span>Accommodations for diverse learning styles</span>
+                    <span>Akomodasi untuk gaya belajar yang beragam</span>
                   </li>
                 </ul>
               </CardContent>
             </Card>
 
             <Card>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-teal-800">
-                  Gifted & Talented Program
+              <CardContent className="p-6 bg-background rounded-xl">
+                  <h3 className="text-xl font-bold text-primary">
+                  Program Bakat & Berbakat
                 </h3>
-                <p className="mt-2 text-gray-600">
-                  Our enrichment programs challenge high-achieving students to
-                  explore advanced concepts and develop their talents.
-                  Opportunities include:
+                <p className="mt-2 text-muted-foreground">
+                  Program pengayaan kami menantang siswa berprestasi untuk
+                  mengeksplorasi konsep lanjutan dan mengembangkan bakat mereka.
+                  Kesempatan meliputi:
                 </p>
                 <ul className="mt-4 space-y-2">
                   <li className="flex items-start">
                     <div className="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-teal-600"></div>
-                    <span>Advanced coursework</span>
+                    <span>Mata pelajaran lanjutan</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-teal-600"></div>
-                    <span>Independent research projects</span>
+                    <span>Proyek riset mandiri</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-teal-600"></div>
-                    <span>Academic competitions</span>
+                    <span>Kompetisi akademik</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-teal-600"></div>
-                    <span>Specialized enrichment activities</span>
+                    <span>Kegiatan pengayaan khusus</span>
                   </li>
                 </ul>
               </CardContent>
@@ -522,29 +515,29 @@ export default function AcademicsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-teal-800 py-16 sm:py-24">
+  <section className="bg-primary py-16 sm:py-24">
         <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Ready to Learn More?
+              Siap untuk Mengetahui Lebih Lanjut?
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-lg text-teal-100">
-              Schedule a meeting with our academic team to discuss how our
-              programs can support your child&apos;s educational journey.
+            <p className="mx-auto mt-4 max-w-xl text-lg text-white/80">
+              Jadwalkan pertemuan dengan tim akademik kami untuk membahas bagaimana
+              program kami dapat mendukung perjalanan pendidikan anak Anda.
             </p>
             <div className="mt-8 flex justify-center gap-4 flex-wrap">
               <Button
                 size="lg"
-                className="bg-white text-teal-800 hover:bg-gray-100 cursor-pointer text-base font-bold"
+                className="bg-background text-primary hover:bg-background/90 cursor-pointer text-base font-bold border border-primary"
               >
-                Request Information
+                Minta Informasi
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white bg-teal-700 cursor-pointer text-base font-bold"
+                className="border-background text-background bg-primary/20 hover:bg-primary/30 cursor-pointer text-base font-bold"
               >
-                Schedule a Tour
+                Jadwalkan Tur
               </Button>
             </div>
           </div>

@@ -11,50 +11,56 @@ import Footer from "@/components/footer";
 import { useState } from "react";
 
 export default function ContactPage() {
-    const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
-    });
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target;
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: value,
-        }));
-    };
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setErrorMessage(null);
 
-        const response = await fetch('/api/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Pesan berhasil dikirim!');
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
         });
-
-        if (response.ok) {
-            // Mungkin ingin reset formulir atau tampilkan pesan sukses
-            alert('Pesan berhasil dikirim!');
-            setFormData({
-                firstName: '',
-                lastName: '',
-                email: '',
-                phone: '',
-                subject: '',
-                message: ''
-            });
-        } else {
-            const errorData = await response.json();
-            alert(errorData.error || 'Terjadi kesalahan!');
-        }
-    };
+        setErrorMessage(null);
+      } else {
+        const errorData = await response.json();
+        setErrorMessage(errorData.error || 'Terjadi kesalahan saat mengirim data. Silakan coba lagi.');
+      }
+    } catch (err) {
+      setErrorMessage('Tidak dapat terhubung ke server. Silakan coba beberapa saat lagi.');
+    }
+  };
 
   return (
     <>
@@ -161,6 +167,13 @@ export default function ContactPage() {
 
               <div>
                 <Card>
+                  <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-foreground">
+                    Kirim Pesan kepada Kami
+                  </h3>
+                  <p className="mt-2 text-muted-foreground">
+                    Isi formulir di bawah ini dan kami akan membalas Anda secepat mungkin.
+                  </p>
                   <form onSubmit={handleSubmit} className="mt-6 space-y-4">
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div>
@@ -231,7 +244,7 @@ export default function ContactPage() {
                         value={formData.phone}
                         onChange={handleChange}
                         placeholder="(022) 123-4567"
-                        type="tel"
+                        type="number"
                         className="mt-1 h-11"
                       />
                     </div>
@@ -277,7 +290,13 @@ export default function ContactPage() {
                     >
                       Kirim Pesan
                     </Button>
+                    {errorMessage && (
+                      <div className="mt-2 text-sm text-red-600 text-center">
+                        {errorMessage}
+                      </div>
+                    )}
                   </form>
+                  </CardContent>
                 </Card>
               </div>
             </div>
