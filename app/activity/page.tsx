@@ -7,52 +7,52 @@ import { useState } from 'react';
 
 const keseharianData = [
   {
-    title: 'Senam Pagi Bersama',
-    date: 'Jumat, 29 Agustus 2025',
-    image: '/image/athletic.webp',
-    desc: 'Setiap hari Jumat, seluruh siswa dan guru mengikuti senam pagi di lapangan sekolah untuk menjaga kesehatan dan kebersamaan.'
-  },
-  {
-    title: 'Kegiatan Literasi',
-    date: 'Senin, 29 Agustus 2025',
-    image: '/image/library.webp',
-    desc: 'Siswa membaca buku di perpustakaan setiap pagi sebelum pelajaran dimulai, membangun budaya literasi sejak dini.'
-  },
-  {
-    title: 'Makan Siang Bersama',
-    date: 'Rabu, 28 Agustus 2025',
-    image: '/image/classroom.webp',
-    desc: 'Momen makan siang bersama di kantin sekolah menjadi waktu yang menyenangkan untuk saling berbagi cerita dan pengalaman.'
-  },
-  {
     title: 'Ekstrakurikuler Pramuka',
-    date: 'Sabtu, 26 Agustus 2025',
-    image: '/image/athletic.webp',
-    desc: 'Kegiatan pramuka rutin diadakan setiap Sabtu untuk melatih kemandirian dan kerja sama.'
+    date: 'Sabtu, 30 Agustus 2025',
+    image: '/image/pramuka.png',
+    desc: 'Kegiatan pramuka rutin diadakan setiap Sabtu untuk melatih kemandirian, kepemimpinan, dan kerja sama antar siswa.'
   },
   {
-    title: 'Kunjungan Perpustakaan',
-    date: 'Kamis, 22 Agustus 2025',
-    image: '/image/library.webp',
-    desc: 'Siswa kelas 5 melakukan kunjungan ke perpustakaan daerah untuk menambah wawasan.'
+    title: 'Ekstrakurikuler Basket',
+    date: 'Jumat, 29 Agustus 2025',
+    image: '/image/game_basket.jpg.jpeg',
+    desc: 'Siswa mengikuti latihan basket setiap Jumat sore untuk meningkatkan keterampilan olahraga dan sportivitas.'
   },
   {
-    title: 'Belajar di Laboratorium',
-    date: 'Selasa, 19 Agustus 2025',
+    title: 'Ekstrakurikuler Seni Tari',
+    date: 'Kamis, 28 Agustus 2025',
+    image: '/image/classroom.webp',
+    desc: 'Kelompok seni tari berlatih rutin untuk persiapan pentas seni sekolah dan lomba antar sekolah.'
+  },
+  {
+    title: 'Ekstrakurikuler Bahasa Inggris',
+    date: 'Rabu, 27 Agustus 2025',
+    image: '/image/bahasa_inggris.jpg',
+    desc: 'Siswa belajar bahasa Inggris secara interaktif melalui games dan presentasi kelompok.'
+  },
+  {
+    title: 'Ekstrakurikuler Paduan Suara',
+    date: 'Selasa, 26 Agustus 2025',
+    image: '/image/paduan_suara.jpeg',
+    desc: 'Paduan suara sekolah berlatih lagu-lagu nasional dan daerah untuk tampil di acara sekolah.'
+  },
+  {
+    title: 'Ekstrakurikuler IT & Robotik',
+    date: 'Senin, 25 Agustus 2025',
+    image: '/image/it_dan_robotik.jpg',
+    desc: 'Siswa belajar dasar-dasar pemrograman dan merakit robot sederhana di laboratorium komputer.'
+  },
+  {
+    title: 'Ekstrakurikuler Voli',
+    date: 'Minggu, 24 Agustus 2025',
+    image: '/image/voli.jpg',
+    desc: 'Latihan voli diadakan setiap minggu pagi untuk membangun kekompakan dan daya tahan fisik.'
+  },
+  {
+    title: 'Ekstrakurikuler Karya Ilmiah Remaja',
+    date: 'Sabtu, 23 Agustus 2025',
     image: '/image/labs.webp',
-    desc: 'Siswa melakukan praktikum sains di laboratorium sekolah dengan bimbingan guru.'
-  },
-  {
-    title: 'Kegiatan Kebersihan Lingkungan',
-    date: 'Senin, 18 Agustus 2025',
-    image: '/image/classroom.webp',
-    desc: 'Siswa dan guru bersama-sama membersihkan lingkungan sekolah setiap awal pekan.'
-  },
-  {
-    title: 'Diskusi Kelompok',
-    date: 'Jumat, 15 Agustus 2025',
-    image: '/image/classroom.webp',
-    desc: 'Siswa berdiskusi kelompok untuk menyelesaikan tugas proyek pelajaran.'
+    desc: 'Kelompok KIR melakukan penelitian sederhana dan presentasi hasil karya di depan kelas.'
   },
 ];
 
@@ -73,7 +73,7 @@ export default function NewsPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="text-4xl font-extrabold tracking-tight text-primary sm:text-5xl md:text-6xl mb-4">
-                Berita Keseharian Sekolah
+                Kegiatan Keseharian Sekolah
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-xl text-muted-foreground">
                 Temukan cerita, aktivitas, dan momen menarik dari keseharian siswa dan guru di sekolah kami.

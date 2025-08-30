@@ -16,8 +16,9 @@ export default function Navbar() {
         <div className="hidden md:flex space-x-8">
           <Link href="/" className="hover:text-primary transition-colors">Beranda</Link>
           <Link href="/about" className="hover:text-primary transition-colors">Tentang</Link>
+          <Link href="/activity" className="hover:text-primary transition-colors">Kegiatan</Link>
           <Link href="/academic" className="hover:text-primary transition-colors">Akademis</Link>
-          <Link href="/#facilities" className="hover:text-primary transition-colors">Fasilitas</Link>
+          <Link href="/news" className="hover:text-primary transition-colors">Berita</Link>
           <Link href="/contact" className="hover:text-primary transition-colors">Kontak</Link>
         </div>
         <Button>Daftar Sekarang</Button>

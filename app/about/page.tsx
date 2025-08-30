@@ -9,173 +9,173 @@ export default function about() {
   return (
     <>
       <Navbar />
-      <div className="pt-16"> {/* Add padding to account for fixed navbar */}
-      {/* Hero Section */}
-      <section className="bg-primary py-16 sm:py-24">
-        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-extrabold tracking-tight text-primary-foreground sm:text-5xl md:text-6xl">
-              Tentang Sekolah Unggulan
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-xl text-primary-foreground/80">
-              Tradisi keunggulan dalam pendidikan sejak 1997.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Story Section */}
-      <section className="bg-background py-16 sm:py-24">
-        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-              Cerita Kami
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Didirikan pada tahun 1997, sekolah kami telah berkembang dari
-              sekolah komunitas kecil menjadi lembaga pendidikan terkemuka. Kami
-              telah mempertahankan komitmen kami terhadap keunggulan akademik
-              dan pengembangan karakter sepanjang sejarah kami.
-            </p>
-          </div>
-
-          <div className="mt-16 grid gap-8 lg:grid-cols-2">
-            <div className="relative h-96 overflow-hidden rounded-xl">
-              <Image
-                src="/image/early-school.webp"
-                alt="Sekolah di masa awal"
-                width={800}
-                height={600}
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <div className="flex flex-col justify-center space-y-6">
-              <div>
-                <h3 className="text-2xl font-bold text-foreground">
-                  Awal Mula Kami
-                </h3>
-                <p className="mt-2 text-muted-foreground">
-                  Sekolah kami dimulai dengan visi untuk menyediakan pendidikan
-                  berkualitas yang memelihara keunggulan akademik dan
-                  pengembangan karakter. Dimulai dengan hanya 50 siswa dan 5
-                  guru, kami fokus pada menciptakan lingkungan belajar yang
-                  mendukung.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-foreground">
-                  Pertumbuhan dan Pengembangan
-                </h3>
-                <p className="mt-2 text-muted-foreground">
-                  Selama beberapa dekade, kami telah memperluas kampus,
-                  meningkatkan kurikulum, dan membangun reputasi yang kuat untuk
-                  keunggulan pendidikan. Saat ini, kami melayani lebih dari
-                  1.200 siswa dengan fakultas 100 pendidik yang berdedikasi.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-foreground">
-                  Melihat ke Masa Depan
-                </h3>
-                <p className="mt-2 text-muted-foreground">
-                  Saat kami terus berkembang, kami tetap berkomitmen pada
-                  prinsip-prinsip pendirian kami sambil merangkul inovasi dalam
-                  pendidikan. Tujuan kami adalah mempersiapkan siswa untuk
-                  sukses di dunia yang berubah dengan cepat.
-                </p>
-              </div>
+      <div className="pt-16">
+        {/* Hero Section */}
+        <section className="bg-primary py-16 sm:py-24">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-3xl text-center">
+              <h1 className="text-4xl font-extrabold tracking-tight text-primary-foreground sm:text-5xl md:text-6xl">
+                Tentang Sekolah Unggulan
+              </h1>
+              <p className="mx-auto mt-6 max-w-2xl text-xl text-primary-foreground/80">
+                Tradisi keunggulan dalam pendidikan sejak 1997.
+              </p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Mission and Values */}
-      <section className="bg-primary/10 py-16 sm:py-24">
-        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-              Misi & Nilai Kami
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Kami dipandu oleh misi dan nilai inti yang jelas yang membentuk
-              segala sesuatu yang kami lakukan.
-            </p>
-          </div>
-
-          <div className="mt-16">
-            <div className="bg-background p-8 rounded-xl shadow-lg">
-              <div className="flex items-center justify-center">
-                <Target className="h-12 w-12 text-primary" />
-              </div>
-              <h3 className="mt-4 text-2xl font-bold text-center text-foreground">
-                Misi Kami
-              </h3>
-              <p className="mt-4 text-center text-lg text-muted-foreground">
-                Menyediakan lingkungan pendidikan yang mendukung dan menantang
-                yang memberdayakan siswa untuk menjadi individu yang penuh rasa
-                ingin tahu secara intelektual, bertanggung jawab secara sosial,
-                dan sadar secara global, siap untuk sukses di perguruan tinggi
-                dan seterusnya.
+        {/* Our Story Section */}
+        <section className="bg-background py-16 sm:py-24">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+                Cerita Kami
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                Didirikan pada tahun 1997, sekolah kami telah berkembang dari
+                sekolah komunitas kecil menjadi lembaga pendidikan terkemuka. Kami
+                telah mempertahankan komitmen kami terhadap keunggulan akademik
+                dan pengembangan karakter sepanjang sejarah kami.
               </p>
             </div>
 
-            <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="rounded-full bg-primary/20 p-3">
-                      <Award className="h-8 w-8 text-primary" />
-                    </div>
-                    <h3 className="mt-4 text-xl font-bold text-foreground">
-                      Keunggulan
-                    </h3>
-                    <p className="mt-2 text-muted-foreground">
-                      Kami berusaha untuk keunggulan dalam semua aspek pendidikan,
-                      menantang siswa untuk mencapai potensi tertinggi mereka.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="rounded-full bg-primary/20 p-3">
-                      <Heart className="h-8 w-8 text-primary" />
-                    </div>
-                    <h3 className="mt-4 text-xl font-bold text-foreground">
-                      Kasih Sayang
-                    </h3>
-                    <p className="mt-2 text-muted-foreground">
-                      Kami menumbuhkan empati, kebaikan, dan rasa hormat terhadap
-                      orang lain, mendorong siswa untuk memberikan kontribusi
-                      positif kepada masyarakat.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="rounded-full bg-primary/20 p-3">
-                      <CheckCircle className="h-8 w-8 text-primary" />
-                    </div>
-                    <h3 className="mt-4 text-xl font-bold text-foreground">
-                      Integritas
-                    </h3>
-                    <p className="mt-2 text-muted-foreground">
-                      Kami menjunjung tinggi standar kejujuran, etika, dan
-                      tanggung jawab tertinggi dalam semua tindakan dan keputusan
-                      kami.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+            <div className="mt-16 grid gap-8 lg:grid-cols-2">
+              <div className="relative h-96 overflow-hidden rounded-xl">
+                <Image
+                  src="/image/early-school.webp"
+                  alt="Sekolah di masa awal"
+                  width={800}
+                  height={600}
+                  className="h-full w-full object-cover rounded-xl"
+                />
+              </div>
+              <div className="flex flex-col justify-center space-y-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground">
+                    Awal Mula Kami
+                  </h3>
+                  <p className="mt-2 text-muted-foreground">
+                    Sekolah kami dimulai dengan visi untuk menyediakan pendidikan
+                    berkualitas yang memelihara keunggulan akademik dan
+                    pengembangan karakter. Dimulai dengan hanya 50 siswa dan 5
+                    guru, kami fokus pada menciptakan lingkungan belajar yang
+                    mendukung.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground">
+                    Pertumbuhan dan Pengembangan
+                  </h3>
+                  <p className="mt-2 text-muted-foreground">
+                    Selama beberapa dekade, kami telah memperluas kampus,
+                    meningkatkan kurikulum, dan membangun reputasi yang kuat untuk
+                    keunggulan pendidikan. Saat ini, kami melayani lebih dari
+                    1.200 siswa dengan fakultas 100 pendidik yang berdedikasi.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground">
+                    Melihat ke Masa Depan
+                  </h3>
+                  <p className="mt-2 text-muted-foreground">
+                    Saat kami terus berkembang, kami tetap berkomitmen pada
+                    prinsip-prinsip pendirian kami sambil merangkul inovasi dalam
+                    pendidikan. Tujuan kami adalah mempersiapkan siswa untuk
+                    sukses di dunia yang berubah dengan cepat.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* Mission and Values */}
+        <section className="bg-primary/10 py-16 sm:py-24">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+                Misi & Nilai Kami
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                Kami dipandu oleh misi dan nilai inti yang jelas yang membentuk
+                segala sesuatu yang kami lakukan.
+              </p>
+            </div>
+
+            <div className="mt-16">
+              <div className="bg-background p-8 rounded-xl shadow-lg">
+                <div className="flex items-center justify-center">
+                  <Target className="h-12 w-12 text-primary" />
+                </div>
+                <h3 className="mt-4 text-2xl font-bold text-center text-foreground">
+                  Misi Kami
+                </h3>
+                <p className="mt-4 text-center text-lg text-muted-foreground">
+                  Menyediakan lingkungan pendidikan yang mendukung dan menantang
+                  yang memberdayakan siswa untuk menjadi individu yang penuh rasa
+                  ingin tahu secara intelektual, bertanggung jawab secara sosial,
+                  dan sadar secara global, siap untuk sukses di perguruan tinggi
+                  dan seterusnya.
+                </p>
+              </div>
+
+              <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <Card>
+                  <CardContent className="p-8">
+                    <div className="flex flex-col items-center text-center">
+                      <div className="rounded-full bg-primary/20 p-3">
+                        <Award className="h-8 w-8 text-primary" />
+                      </div>
+                      <h3 className="mt-4 text-xl font-bold text-foreground">
+                        Keunggulan
+                      </h3>
+                      <p className="mt-2 text-muted-foreground">
+                        Kami berusaha untuk keunggulan dalam semua aspek pendidikan,
+                        menantang siswa untuk mencapai potensi tertinggi mereka.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardContent className="p-8">
+                    <div className="flex flex-col items-center text-center">
+                      <div className="rounded-full bg-primary/20 p-3">
+                        <Heart className="h-8 w-8 text-primary" />
+                      </div>
+                      <h3 className="mt-4 text-xl font-bold text-foreground">
+                        Kasih Sayang
+                      </h3>
+                      <p className="mt-2 text-muted-foreground">
+                        Kami menumbuhkan empati, kebaikan, dan rasa hormat terhadap
+                        orang lain, mendorong siswa untuk memberikan kontribusi
+                        positif kepada masyarakat.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardContent className="p-8">
+                    <div className="flex flex-col items-center text-center">
+                      <div className="rounded-full bg-primary/20 p-3">
+                        <CheckCircle className="h-8 w-8 text-primary" />
+                      </div>
+                      <h3 className="mt-4 text-xl font-bold text-foreground">
+                        Integritas
+                      </h3>
+                      <p className="mt-2 text-muted-foreground">
+                        Kami menjunjung tinggi standar kejujuran, etika, dan
+                        tanggung jawab tertinggi dalam semua tindakan dan keputusan
+                        kami.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
 
       {/* Leadership Team */}
       <section className="bg-background py-16 sm:py-24">
@@ -192,13 +192,13 @@ export default function about() {
 
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <Card className="overflow-hidden p-0">
-              <div className="h-64 bg-primary/20">
+              <div className="h-64 bg-primary/20 flex items-center justify-center p-4">
                 <Image
                   src="/image/dr_mfs.png"
                   alt="Kepala Sekolah"
-                  width={400}
-                  height={400}
-                  className="h-full w-full object-cover"
+                  width={180}
+                  height={180}
+                  className="h-44 w-44 object-cover rounded-xl shadow-md"
                 />
               </div>
               <CardContent className="px-6 pb-6">
@@ -214,13 +214,13 @@ export default function about() {
             </Card>
 
             <Card className="overflow-hidden p-0">
-              <div className="h-64 bg-primary/20">
+              <div className="h-64 bg-primary/20 flex items-center justify-center p-4">
                 <Image
                   src="/image/dr_mf.jpeg"
                   alt="Wakil Kepala Sekolah"
-                  width={400}
-                  height={400}
-                  className="h-full w-full object-cover"
+                  width={180}
+                  height={180}
+                  className="h-44 w-44 object-cover rounded-xl shadow-md"
                 />
               </div>
               <CardContent className="px-6 pb-6">
@@ -236,13 +236,13 @@ export default function about() {
             </Card>
 
             <Card className="overflow-hidden p-0">
-              <div className="h-64 bg-primary/20">
+              <div className="h-64 bg-primary/20 flex items-center justify-center p-4">
                 <Image
                   src="/image/dr_fazri.png"
                   alt="Dekan Siswa"
-                  width={400}
-                  height={400}
-                  className="h-full w-full object-cover"
+                  width={180}
+                  height={180}
+                  className="h-44 w-44 object-cover rounded-xl shadow-md"
                 />
               </div>
               <CardContent className="px-6 pb-6">
